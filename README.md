@@ -4,7 +4,7 @@ Anru 是一个基于 Pi Agent Core 的 Windows 跨性别与性别多样化健康
 
 ## 主要能力
 
-- 三本核心期刊种子：Transgender Health、LGBT Health、International Journal of Transgender Health（含旧刊名/ISSN）。
+- 来自于Pubmed，Web of science平台的10162篇高质量跨性别保护文章作为基石。
 - Crossref 题录与 PubMed 主题检索合并；DOI/PMID 去重，作者、期刊、标识符、来源和采集批次采用关系表保存。
 - 离线 FTS5 检索；联网、拖拽附件、聊天记录、思考强度、多步 Agent 和独立医学审计。
 - 仅连接用户配置的 OpenAI-compatible 第三方接口，密钥由 Windows `safeStorage` 加密。
