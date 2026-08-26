@@ -1,4 +1,4 @@
-# Anru Evidence Workbench for Transgender Health / 安若循证-跨性别健康工作台
+# Anru Evidence-Workbench for Transgender Health / 安若循证-跨性别健康工作台
 
 Anru 是一个基于 Pi Agent Core 的 Windows 跨性别与性别多样化健康循证工作台。它先查询随包 SQLite/FTS5 文献库，再由用户配置的第三方模型进行多步综合和独立事实审计。
 
