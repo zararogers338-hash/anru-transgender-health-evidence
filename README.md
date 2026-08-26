@@ -31,7 +31,6 @@ npm run dev
 - Windows 10/11 x64；Electron、SQLite 与 Pi 运行时已随包提供，不要求另装 Node.js、Python 或浏览器运行时。
 - 预留约 650 MiB 磁盘空间。
 - 离线检索可直接使用；聊天综合需要用户自己的第三方 OpenAI-compatible API 地址、模型名和密钥，实时核验还需要互联网连接。
-- 当前 0.1.0 构建未做商业代码签名，Windows 可能显示未知发布者；请用发布页给出的 SHA-256 校验安装器。
 
 ## 重建文献库
 
