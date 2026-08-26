@@ -1,0 +1,65 @@
+{
+  "name": "anru-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Anru 安若 — Pi-based transgender health evidence client",
+  "main": "electron/main.cjs",
+  "author": "Anru",
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "concurrently -k \"vite --host 127.0.0.1\" \"wait-on http://127.0.0.1:5173 && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5173 electron .\"",
+    "build:web": "vite build",
+    "build:corpus": "python scripts/build-transgender-corpus.py",
+    "audit:corpus": "python scripts/audit-corpus.py",
+    "build": "npm run build:web && electron-builder --win --x64 --dir",
+    "build:installer": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-distribution.ps1",
+    "test": "node --test test/*.test.cjs",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@earendil-works/pi-agent-core": "^0.84.3",
+    "@earendil-works/pi-ai": "^0.84.3",
+    "cheerio": "^1.0.0",
+    "mammoth": "^1.11.0",
+    "pdf-parse": "^1.1.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.0.0",
+    "electron": "^43.4.1",
+    "electron-builder": "^26.0.12",
+    "vite": "^7.1.3",
+    "wait-on": "^8.0.4"
+  },
+  "build": {
+    "appId": "cn.anru.transgender.evidence",
+    "productName": "Anru",
+    "asar": true,
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "resources/**/*",
+      "!resources/anru/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/anru",
+        "to": "anru"
+      }
+    ],
+    "win": {
+      "target": "dir",
+      "icon": "resources/icon.png",
+      "artifactName": "Anru-${version}-${arch}.${ext}"
+    }
+  }
+}

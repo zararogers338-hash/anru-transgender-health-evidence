@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "journals": [
+    {"key":"transgender-health","name":"Transgender Health","publisher":"SAGE","homepage":"https://journals.sagepub.com/home/trg","issn_print":"2688-4887","issn_online":"2380-193X","nlm_catalog":"https://www.ncbi.nlm.nih.gov/nlmcatalog/101691357","acquisition":["crossref","pubmed"],"planned_acquisition":["openalex","pmc-oa"],"fulltext_policy":"Only separately licensed open-access copies"},
+    {"key":"lgbt-health","name":"LGBT Health","publisher":"SAGE","homepage":"https://journals.sagepub.com/home/lgb","issn_print":"2325-8292","issn_online":"2325-8306","nlm_catalog":"https://www.ncbi.nlm.nih.gov/nlmcatalog/101616707","acquisition":["crossref","pubmed"],"planned_acquisition":["openalex","pmc-oa"],"fulltext_policy":"Only separately licensed open-access copies"},
+    {"key":"international-journal-transgender-health","name":"International Journal of Transgender Health","former_name":"International Journal of Transgenderism","publisher":"Taylor & Francis","homepage":"https://www.tandfonline.com/journals/wijt21/about-this-journal","issn_print":"2689-5269","issn_online":"2689-5277","former_issn_print":"1553-2739","former_issn_online":"1434-4599","nlm_catalog":"https://www.ncbi.nlm.nih.gov/nlmcatalog/101765532","acquisition":["crossref","pubmed"],"planned_acquisition":["openalex","pmc-oa"],"fulltext_policy":"Only separately licensed open-access copies"}
+  ]
+}

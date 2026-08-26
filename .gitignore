@@ -1,0 +1,22 @@
+node_modules/
+dist/
+release/
+.local-unused/
+coverage/
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+test-attachment.md
+Thumbs.db
+.DS_Store
+
+# Release binaries are generated locally. The Anru SQLite corpus and its Skill
+# are intentionally versioned so source checkouts remain immediately usable.
+*.exe
+*.7z
+*.zip
+

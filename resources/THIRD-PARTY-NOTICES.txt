@@ -1,0 +1,10 @@
+Anru Desktop includes or interoperates with:
+
+1. Pi Agent Core and Pi AI packages (their respective licenses).
+2. Electron, React, Vite, Cheerio, Mammoth and PDF parsing dependencies.
+3. SQLite/FTS5 through the Electron/Node runtime.
+4. Metadata obtained from Crossref and biomedical records obtained through NCBI PubMed E-utilities.
+
+Publisher journal pages are registered as source seeds only. Restricted SAGE and Taylor & Francis full text is not bundled. Abstract and article copyright may remain with authors or publishers; inspect per-record provenance and license before redistribution.
+
+Anru is not affiliated with or endorsed by SAGE, Taylor & Francis, WPATH, Crossref, PubMed/NCBI, Pi maintainers, or third-party model providers.
